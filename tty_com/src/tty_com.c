@@ -296,7 +296,8 @@ int main(int argc, char **argv)
    
     if(!strcmp(argv[2], "Head Up"))
     {
-	memcpy(send_buf, "5A 10 10 02 40 00", sizeof("5A 10 10 02 40 00"));
+	printf("5A1010024000\\n size:%d\n",sizeof("5A1010024000\n"));
+	memcpy(send_buf, "5A1010024000\n", sizeof("5A1010024000\n"));
     }
 
 
